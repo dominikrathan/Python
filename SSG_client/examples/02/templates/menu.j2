@@ -1,7 +1,0 @@
-  <nav>
-    <ul>
-      {% for page in SITE.pages|sort(attribute='meta.title') %}
-        <li><a href="{{ SITE.path_to_root}}{{ page.link }}">{{ page.meta.linktitle|default(page.meta.title) }}</a></li>
-      {% endfor %}
-    </ul>
-  </nav>
