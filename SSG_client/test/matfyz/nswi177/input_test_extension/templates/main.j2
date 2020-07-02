@@ -1,0 +1,28 @@
+<html>
+<head>
+  <title>{{ title }}{% if not home %}| NSWI177{% endif %}</title>
+  <link type="text/css" rel="stylesheet" href="{{ SITE.path_to_root }}main.css" />
+</head>
+<body>
+
+<header>
+  <h1>{{ title }}</h1>
+</header>
+
+<div id="wrapper">
+<aside id="sidebar">
+  {% include "menu.j2" %}
+</aside>
+
+<section id="content">
+<article>    
+  
+
+  {{ content|markdownify }}
+  
+</article>
+</section>
+</div>
+
+</body>
+</html>  

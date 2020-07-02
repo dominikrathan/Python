@@ -1,0 +1,3 @@
+[console_scripts]
+my_ssg = matfyz.nswi177.my_ssg:main
+
